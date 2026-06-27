@@ -27,6 +27,7 @@ buildFuture = false
   # EDIT: short description used for SEO / link previews
   description = "Anayancy Ramos — PhD candidate at Emory studying how Pseudomonas aeruginosa and Staphylococcus aureus compete and evolve in cystic fibrosis airway infections, combining wet-lab work with phylogenetics and bioinformatics."
   author = "Anayancy Ramos"                    # EDIT: your name
+  orcid = "0000-0003-2275-0956"                # your ORCID iD (powers the Publications page)
   defaultTheme = "auto"                        # auto | light | dark
   ShowReadingTime = true
   ShowShareButtons = true
@@ -99,6 +100,11 @@ buildFuture = false
     name = "Posts"
     url = "/posts/"
     weight = 10
+  [[menu.main]]
+    identifier = "publications"
+    name = "Publications"
+    url = "/publications/"
+    weight = 15
   [[menu.main]]
     identifier = "about"
     name = "About"

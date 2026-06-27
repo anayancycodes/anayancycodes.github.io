@@ -1,0 +1,103 @@
+{{- /*
+  orcid-pubs shortcode
+  Fetches works from the public ORCID API in the visitor's browser and shows
+  the most recent ones. No rebuild needed — it updates whenever ORCID does.
+
+  Usage in a page:   {{< orcid-pubs limit="5" >}}
+  ORCID iD is read from hugo.toml -> [params] orcid = "0000-0000-0000-0000"
+*/ -}}
+{{- $orcid := site.Params.orcid -}}
+{{- $limit := .Get "limit" | default "5" -}}
+
+<div id="orcid-pubs" data-orcid="{{ $orcid }}" data-limit="{{ $limit }}">
+  <p><em>Loading publications…</em></p>
+</div>
+
+<script>
+(function () {
+  var el = document.getElementById("orcid-pubs");
+  if (!el) return;
+  var orcid = (el.dataset.orcid || "").trim();
+  var limit = parseInt(el.dataset.limit, 10) || 5;
+
+  if (!orcid) {
+    el.innerHTML = '<p><em>Set your ORCID iD in <code>hugo.toml</code> ' +
+      '(<code>orcid = "0000-0000-0000-0000"</code>) to list your publications here.</em></p>';
+    return;
+  }
+
+  var profile = "https://orcid.org/" + orcid;
+
+  fetch("https://pub.orcid.org/v3.0/" + orcid + "/works", {
+    headers: { "Accept": "application/json" }
+  })
+  .then(function (r) {
+    if (!r.ok) throw new Error("ORCID returned " + r.status);
+    return r.json();
+  })
+  .then(function (data) {
+    var groups = (data && data.group) || [];
+    var works = groups.map(function (g) {
+      var s = (g["work-summary"] || [])[0] || {};
+      var title = s.title && s.title.title ? s.title.title.value : "Untitled";
+      var journal = s["journal-title"] ? s["journal-title"].value : "";
+      var pd = s["publication-date"] || {};
+      var y = pd.year ? parseInt(pd.year.value, 10) : 0;
+      var m = pd.month ? parseInt(pd.month.value, 10) : 0;
+      var d = pd.day ? parseInt(pd.day.value, 10) : 0;
+
+      // find a DOI (or any usable URL)
+      var url = "";
+      var ids = (s["external-ids"] && s["external-ids"]["external-id"]) || [];
+      for (var i = 0; i < ids.length; i++) {
+        if ((ids[i]["external-id-type"] || "").toLowerCase() === "doi") {
+          url = (ids[i]["external-id-url"] && ids[i]["external-id-url"].value) ||
+                ("https://doi.org/" + ids[i]["external-id-value"]);
+          break;
+        }
+      }
+      if (!url && s.url && s.url.value) url = s.url.value;
+
+      return { title: title, journal: journal, year: y,
+               sortKey: (y * 10000) + (m * 100) + d, url: url };
+    });
+
+    works.sort(function (a, b) { return b.sortKey - a.sortKey; });
+    works = works.slice(0, limit);
+
+    if (works.length === 0) {
+      el.innerHTML = '<p><em>No publications listed yet. As work is indexed on ' +
+        '<a href="' + profile + '" target="_blank" rel="noopener">ORCID</a>, ' +
+        'it will appear here automatically.</em></p>';
+      return;
+    }
+
+    var html = "<ul class='orcid-list'>";
+    works.forEach(function (w) {
+      var line = w.url
+        ? "<a href='" + w.url + "' target='_blank' rel='noopener'>" + w.title + "</a>"
+        : w.title;
+      var meta = [];
+      if (w.journal) meta.push(w.journal);
+      if (w.year) meta.push(w.year);
+      html += "<li>" + line +
+        (meta.length ? " <span class='orcid-meta'>" + meta.join(", ") + "</span>" : "") +
+        "</li>";
+    });
+    html += "</ul>";
+    html += "<p><a href='" + profile + "' target='_blank' rel='noopener'>" +
+            "See all on ORCID →</a></p>";
+    el.innerHTML = html;
+  })
+  .catch(function () {
+    el.innerHTML = "<p><em>Couldn't load publications right now. " +
+      "You can view them on <a href='" + profile + "' target='_blank' rel='noopener'>ORCID</a>.</em></p>";
+  });
+})();
+</script>
+
+<style>
+  #orcid-pubs .orcid-list { padding-left: 1.1rem; }
+  #orcid-pubs .orcid-list li { margin-bottom: 0.6rem; line-height: 1.5; }
+  #orcid-pubs .orcid-meta { color: var(--secondary); font-size: 0.92em; }
+</style>
