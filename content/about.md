@@ -10,7 +10,7 @@ Hi, I'm **Anayancy**. I'm a microbiology PhD student at **Emory**, going into my
 
 ## My research
 
-I study two bacteria, ***Pseudomonas aeruginosa*** and ***Staphylococcus aureus***, that often infect the same lungs in people with **cystic fibrosis** and compete for space there. I want to understand how they adapt and outcompete each other over time. My work is **part wet lab and part bioinformatics**: I run experiments at the bench, then use phylogenetics and sequence data to see what's happening at the genetic level.
+I study two bacteria, ***Pseudomonas aeruginosa*** and ***Staphylococcus aureus***, that co-infect the lungs of people with **cystic fibrosis**. I focus on how *P. aeruginosa* adapts to *S. aureus* over the course of an infection. I want to understand how they adapt and outcompete each other over time. My work is **part wet lab and part bioinformatics**: I run experiments at the bench, then use phylogenetics and sequence data to see what's happening at the genetic level.
 
 A few of the threads I'm pulling on right now:
 
