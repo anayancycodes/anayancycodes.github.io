@@ -67,6 +67,20 @@ code, pre, kbd, samp {
 /* keep list cards readable now that --entry matches the page bg */
 .post-entry { border: 1px solid var(--border); }
 
+/* Make every page one uniform surface: the table-of-contents panel and inline
+   code blend into the page (kept legible with a thin border). Code BLOCKS keep
+   their own dark background. */
+.toc,
+details.toc,
+.post-single .toc {
+  background: var(--theme) !important;
+  border: 1px solid var(--border);
+}
+.post-content code:not(pre code) {
+  background: var(--theme);
+  border: 1px solid var(--border);
+}
+
 /* ---------- SMALL TOUCHES ---------- */
 ::selection { background: #C0D6DF; color: #4F0C28; }              /* Pale Sky */
 :root[data-theme="dark"] ::selection { background: #BA8F95; color: #2E0814; }  /* Rosy Taupe */
