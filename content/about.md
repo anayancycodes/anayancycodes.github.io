@@ -14,21 +14,25 @@ I study two bacteria, ***Pseudomonas aeruginosa*** and ***Staphylococcus aureus*
 
 A few of the threads I'm pulling on right now:
 
-- **Microevolution** — the small genetic changes these bacteria pick up over short timescales.
-- **Competition and coexistence** — what decides whether one of them pushes the other out or they both stick around.
-- **Bench to genome** — connecting what I see in experiments to the signals left behind in sequence data.
+- **Microevolution**: the small genetic changes these bacteria pick up over short timescales.
+- **Competition and coexistence**: what decides whether one of them pushes the other out or they both stick around.
+- **Bench to genome**: connecting what I see in experiments to the signals left behind in sequence data.
 
 ## Organizing
 
-Outside the lab — though I'd argue it isn't really *outside* — I'm a labor organizer. I'm the **VP of Communications for EmoryUnite!**, our graduate-worker union, and I lead its **International Student Working Group**. EmoryUnite! won its union election in 2023 and ratified its first contract with Emory in 2025; I stepped into organizing in 2026. I'm also part of **DeFlock Emory**, a campus coalition working to get mass-surveillance cameras off our campus.
+Outside the lab (though I'd argue it isn't really *outside*), I'm a labor organizer. I'm the **elected VP of Communications** for [**EmoryUnite!**](https://emoryunite.org/), our graduate-worker union, and I lead its **International Student Working Group**. EmoryUnite! won its union election in 2023 and ratified its first contract with Emory in 2025; I stepped into organizing in 2026.
 
-I organize because the people who do the teaching, research, and care work that keep a university running deserve a real say in their conditions — and because international, undocumented, and other vulnerable workers are the ones most often left out of that conversation.
+As lead of the International Student Working Group, I helped organize the **DeFlock Emory Coalition**, a cross-campus effort to remove Flock Safety's automated license-plate readers from our campus. We collected over 1,000 petition signatures, built relationships with AAUP and student groups, and produced teach-in, op-ed, and outreach materials that made the stakes legible to our community. I've also led a session on anti-racist practices in my PhD program and pushed for a more transparent, equitable recruitment process.
 
-I also mentor undergraduates from underrepresented backgrounds in STEM through **NSURP**, because *who* gets to do science matters to me as much as the science itself.
+I organize because the people who do the teaching, research, and care work that keep a university running deserve a real say in their conditions, and because international, undocumented, and other vulnerable workers are too often left out of that conversation. Again and again, I've watched decisions get made for marginalized communities without their input, by people who assume they already know what's best.
+
+Across my work, I've used whatever privilege and platform I have to advocate for undocumented and marginalized students, because the point of getting into the room is to hold the door open behind you. I know what it costs to put your name on the record, and I want to build the kind of communications infrastructure that lets other members step forward with preparation and backup.
+
+I also mentor undergraduate researchers, because *who* gets to do science matters to me as much as the science itself.
 
 ## On being public
 
-I'm a **DACA recipient**, and I don't hide it. I almost didn't make it to college — DACA students in Georgia can't access federal aid or state tuition assistance — and I'm here because of programs like TheDream.US and people who decided to invest in me. Staying quiet keeps no one safe, so I'd rather use whatever platform I have. If that's not for you, that's okay.
+I'm a **DACA recipient**, and I don't hide it. I almost didn't make it to college. DACA students in Georgia can't access federal aid or state tuition assistance, and I'm here because of programs like [TheDream.US Opportunity Scholarship](https://www.thedream.us/scholarships/opportunity-scholarship/) and people who decided to invest in me. Staying quiet keeps no one safe, so I'd rather use whatever platform I have. If that's not for you, that's okay.
 
 ## Why this site
 
