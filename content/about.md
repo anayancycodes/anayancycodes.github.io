@@ -4,26 +4,26 @@ date = 2026-06-27
 layout = "single"
 +++
 
-<!-- EDIT this whole page — it's written as a starting draft in your voice. -->
+{{< figure src="/images/avatar.png" alt="Anayancy Ramos" width="180" align="center" >}}
 
-I'm **Anayancy** — an early-career bioinformatician learning the field in public.
+I'm **Anayancy Ramos**, an incoming 5th-year PhD candidate in Microbiology at **Emory University**, and an **HHMI Gilliam Fellow** ('24–'27), **Robert W. Woodruff Fellow**, and **Centennial Scholars Fellow**.
 
-My background is in *(EDIT: your degree / current program / lab)*. Day to day I work mostly in **R**, doing things like *(EDIT: data wrangling, genomics/single-cell analysis, visualization, stats)*. I started this blog because the most useful resources I've found are the ones where someone shows their actual working — including the dead ends — and I wanted to do that for the next person (and for past me).
+## My research
 
-### What you'll find here
+I study the **evolutionary dynamics and competitive interactions** between *Pseudomonas aeruginosa* and *Staphylococcus aureus* — two bacterial troublemakers that co-infect the airways of people with cystic fibrosis. I combine **wet-lab experiments** with **phylogenetics and bioinformatics** to understand how these pathogens adapt and outcompete each other over time.
 
-- **Walkthroughs** of analyses I'm learning, with runnable R code
-- **Honest field notes** — what confused me, what finally clicked
-- **Tools & workflow** posts as I build out my setup
+A few of the threads I'm currently pulling on:
 
-### A note on pace
+- **Microevolution** — how these populations change over short timescales within a host, mutation by mutation.
+- **Competition & coexistence** — what determines whether one pathogen displaces the other or they settle into an uneasy truce.
+- **Bridging bench and genome** — connecting what I see in experiments to the signals left behind in sequence data.
 
-I write when I can. Some weeks that's a full walkthrough, some weeks it's a 200-word note. Consistency over intensity is the whole strategy.
+## Why this blog
 
-### Elsewhere
+I started writing to think out loud — about the analyses I'm learning, the tools I use (mostly **R**), and the parts of computational biology that took me a while to understand. If it helps someone a few steps behind me, even better.
+
+## Find me
 
 - GitHub: [@anayancycodes](https://github.com/anayancycodes)
-- Email: imusicjunki3@gmail.com *(EDIT)*
-- *(EDIT: add LinkedIn / Bluesky / ORCID when ready)*
-
-*Want to suggest a topic or point out something I got wrong? I genuinely want to hear it — email me.*
+- LinkedIn: [anayancy-ramos](https://www.linkedin.com/in/anayancy-ramos/)
+- Bluesky: [@anayancy.bsky.social](https://anayancy.bsky.social)

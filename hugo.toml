@@ -6,7 +6,7 @@
 
 baseURL = "https://anayancycodes.github.io/"
 languageCode = "en-us"
-title = "Anayancy Codes"                       # EDIT: site title (browser tab + header)
+title = "Anayancy Ramos"                       # EDIT: site title (browser tab + header)
 theme = "PaperMod"
 
 # Pretty URLs and pagination
@@ -25,8 +25,8 @@ buildFuture = false
 
 [params]
   # EDIT: short description used for SEO / link previews
-  description = "Notes from an early-career bioinformatician learning in public — R, genomics, and the messy middle of figuring it out."
-  author = "Anayancy"                          # EDIT: your name
+  description = "Anayancy Ramos — PhD candidate at Emory studying how Pseudomonas aeruginosa and Staphylococcus aureus compete and evolve in cystic fibrosis airway infections, combining wet-lab work with phylogenetics and bioinformatics."
+  author = "Anayancy Ramos"                    # EDIT: your name
   defaultTheme = "auto"                        # auto | light | dark
   ShowReadingTime = true
   ShowShareButtons = true
@@ -38,29 +38,46 @@ buildFuture = false
   ShowWordCount = true
   comments = false                             # turn on later if you add a comment system
 
-  # ---- Homepage intro (the "home-info" block above your post list) ----
-  [params.homeInfoParams]
-    Title = "Hi, I'm Anayancy 👋"               # EDIT
-    Content = """
-Early-career bioinformatician documenting the learning process — R, single-cell & genomics analysis, and honest notes from the parts that are hard.
+  # ---- Favicon (rescued from your old site) ----
+  [params.assets]
+    favicon = "/favicon.png"
+    favicon16x16 = "/favicon.png"
+    favicon32x32 = "/favicon.png"
+    apple_touch_icon = "/favicon.png"
 
-I write mostly to teach myself out loud. If that's useful to you too, even better. Scroll down for recent posts, or start with the [About](/about/) page.
-"""
+  # ---- Homepage: profile mode (photo + bio + buttons) ----
+  # Want a blog-style homepage instead (intro text + a feed of recent posts)?
+  # Set enabled = false here and uncomment the [params.homeInfoParams] block below.
+  [params.profileMode]
+    enabled = true
+    title = "Anayancy Ramos"
+    subtitle = "PhD candidate at Emory studying how *Pseudomonas aeruginosa* and *Staphylococcus aureus* compete and evolve in the airways of people with cystic fibrosis — combining wet-lab experiments with phylogenetics and bioinformatics. HHMI Gilliam Fellow."
+    imageUrl = "/images/avatar.png"
+    imageTitle = "Anayancy Ramos"
+    imageWidth = 150
+    imageHeight = 150
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "posts"
+    [[params.profileMode.buttons]]
+      name = "About"
+      url = "about"
 
-  # ---- Social / profile icons (shown under the intro) ----
-  # Delete any you don't use; add your real handles where marked EDIT.
+  # ---- Alternative blog-style homepage (currently off) ----
+  # [params.homeInfoParams]
+  #   Title = "Hi, I'm Anayancy 👋"
+  #   Content = "Short intro here."
+
+  # ---- Social / profile icons (shown under the buttons) ----
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/anayancycodes"
   [[params.socialIcons]]
-    name = "email"
-    url = "mailto:imusicjunki3@gmail.com"      # EDIT: maybe a dedicated/professional address
-  # [[params.socialIcons]]
-  #   name = "linkedin"
-  #   url = "https://www.linkedin.com/in/YOUR-HANDLE/"   # EDIT then uncomment
-  # [[params.socialIcons]]
-  #   name = "bluesky"
-  #   url = "https://bsky.app/profile/YOUR-HANDLE"       # EDIT then uncomment
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/anayancy-ramos/"
+  [[params.socialIcons]]
+    name = "bluesky"
+    url = "https://anayancy.bsky.social"
   [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
