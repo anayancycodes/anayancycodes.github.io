@@ -51,7 +51,7 @@ buildFuture = false
   [params.profileMode]
     enabled = true
     title = "Anayancy Ramos"
-    subtitle = "PhD candidate at Emory studying how *Pseudomonas aeruginosa* and *Staphylococcus aureus* compete and evolve in the airways of people with cystic fibrosis — combining wet-lab experiments with phylogenetics and bioinformatics. HHMI Gilliam Fellow."
+    subtitle = "I'm a microbiology PhD student at Emory. I study two bacteria, *Pseudomonas aeruginosa* and *Staphylococcus aureus*, that gang up on the lungs of people with cystic fibrosis, and how they fight and evolve over time. Part of my work is at the bench, part of it is bioinformatics. Currently an HHMI Gilliam Fellow."
     imageUrl = "/images/avatar.png"
     imageTitle = "Anayancy Ramos"
     imageWidth = 150

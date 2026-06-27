@@ -6,21 +6,17 @@ layout = "single"
 
 {{< figure src="/images/avatar.png" alt="Anayancy Ramos" width="180" align="center" >}}
 
-I'm **Anayancy Ramos**, an incoming 5th-year PhD candidate in Microbiology at **Emory University**, and an **HHMI Gilliam Fellow** ('24–'27), **Robert W. Woodruff Fellow**, and **Centennial Scholars Fellow**.
+Hi, I'm Anayancy. I'm a microbiology PhD student at Emory, going into my 5th year, and an HHMI Gilliam Fellow ('24–'27), Robert W. Woodruff Fellow, and Centennial Scholars Fellow.
 
-## My research
+## What I work on
 
-I study the **evolutionary dynamics and competitive interactions** between *Pseudomonas aeruginosa* and *Staphylococcus aureus* — two bacterial troublemakers that co-infect the airways of people with cystic fibrosis. I combine **wet-lab experiments** with **phylogenetics and bioinformatics** to understand how these pathogens adapt and outcompete each other over time.
+I study two bacteria, *Pseudomonas aeruginosa* and *Staphylococcus aureus*, that co-infect the airways of people with cystic fibrosis. They're constantly competing, and I want to know how they adapt and outcompete each other over time. My work is part wet lab and part bioinformatics: I run experiments at the bench, then use phylogenetics and sequence data to see what's happening at the genetic level.
 
-A few of the threads I'm currently pulling on:
+Lately I've been especially into microevolution, the small genetic changes these bacteria pick up over short timescales, and what tips the balance toward one of them winning out (or both sticking around).
 
-- **Microevolution** — how these populations change over short timescales within a host, mutation by mutation.
-- **Competition & coexistence** — what determines whether one pathogen displaces the other or they settle into an uneasy truce.
-- **Bridging bench and genome** — connecting what I see in experiments to the signals left behind in sequence data.
+## Why this site
 
-## Why this blog
-
-I started writing to think out loud — about the analyses I'm learning, the tools I use (mostly **R**), and the parts of computational biology that took me a while to understand. If it helps someone a few steps behind me, even better.
+I made this to keep notes on what I'm learning, mostly in R, and to share pieces of my research and the computational side of biology as I go. If any of it turns out to be useful to you, even better.
 
 ## Find me
 
