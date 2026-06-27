@@ -6,7 +6,7 @@ layout = "single"
 
 {{< figure src="/images/avatar.png" alt="Anayancy Ramos" width="180" align="center" >}}
 
-Hi, I'm **Anayancy**. I'm a microbiology PhD student at **Emory**, going into my 5th year, and an **HHMI Gilliam Fellow** ('24–'27), **Robert W. Woodruff Fellow**, and **Centennial Scholars Fellow**.
+Hi, I'm **Anayancy**. I'm a microbiology PhD student at [**Emory**](https://biomed.emory.edu/PROGRAM_SITES/MMG/), going into my 5th year, and an [**HHMI Gilliam Fellow**](https://www.hhmi.org/programs/gilliam-fellows) ('24–'27), [**Robert W. Woodruff Fellow**](https://gs.emory.edu/funding/scholarships/index.html), and [**Centennial Scholars Fellow**](https://gs.emory.edu/admissions/finance_overview.html).
 
 ## My research
 

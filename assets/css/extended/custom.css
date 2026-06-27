@@ -19,7 +19,7 @@
   --code-block-bg: #3A0A1F;    /* code block background */
   --border: #D9CDB3;           /* borders / rules */
   --link: #2F4F6E;             /* article links (Baltic Blue, darkened for contrast) */
-  --toc-bg: #C0D6DF;           /* table-of-contents panel (Pale Sky, contrasting) */
+  --toc-bg: #E8DAB2;           /* table-of-contents panel (darker eggshell / Pearl Beige) */
 }
 
 /* ---------- DARK THEME (this PaperMod uses html[data-theme="dark"]) ---------- */
