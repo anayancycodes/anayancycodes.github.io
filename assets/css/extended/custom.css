@@ -19,6 +19,7 @@
   --code-block-bg: #3A0A1F;    /* code block background */
   --border: #D9CDB3;           /* borders / rules */
   --link: #2F4F6E;             /* article links (Baltic Blue, darkened for contrast) */
+  --toc-bg: #C0D6DF;           /* table-of-contents panel (Pale Sky, contrasting) */
 }
 
 /* ---------- DARK THEME (this PaperMod uses html[data-theme="dark"]) ---------- */
@@ -33,6 +34,7 @@
   --code-block-bg: #2E0814;    /* code block background */
   --border: #7A3A50;           /* borders / rules */
   --link: #C0D6DF;             /* article links (Pale Sky) */
+  --toc-bg: #6B2238;           /* table-of-contents panel (lighter crimson, contrasting) */
 }
 
 /* ---------- FONTS ---------- */
@@ -73,7 +75,7 @@ code, pre, kbd, samp {
 .toc,
 details.toc,
 .post-single .toc {
-  background: var(--theme) !important;
+  background: var(--toc-bg) !important;
   border: 1px solid var(--border);
 }
 .post-content code:not(pre code) {
