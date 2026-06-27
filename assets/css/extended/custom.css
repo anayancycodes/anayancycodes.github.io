@@ -22,7 +22,7 @@
 }
 
 /* ---------- DARK THEME ---------- */
-.dark {
+:root[data-theme="dark"] {
   --theme: #4F0C28;            /* deep crimson background */
   --entry: #5E1832;            /* cards / entries (lighter crimson) */
   --primary: #F0E6C8;          /* headings (light beige) */
@@ -71,7 +71,7 @@ code, pre, kbd, samp {
   background: #C0D6DF;   /* Pale Sky highlight */
   color: #4F0C28;
 }
-.dark ::selection {
+:root[data-theme="dark"] ::selection {
   background: #BA8F95;   /* Rosy Taupe highlight */
   color: #2E0814;
 }
