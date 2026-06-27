@@ -10,7 +10,7 @@ Hi, I'm **Anayancy**. I'm a microbiology PhD student at [**Emory**](https://biom
 
 ## My research
 
-I study two bacteria, ***Pseudomonas aeruginosa*** and ***Staphylococcus aureus***, that co-infect the lungs of people with **cystic fibrosis**. I focus on how *P. aeruginosa* adapts to *S. aureus* over the course of an infection. I want to understand how they adapt and outcompete each other over time. My work is **part wet lab and part bioinformatics**: I run experiments at the bench, then use phylogenetics and sequence data to see what's happening at the genetic level. My advisor is [Tim Read](https://emergent.emory.edu/), whose lab studies bacterial genomics and builds computational tools (like the Bactopia pipeline) to understand how pathogens evolve and spread.
+I study two bacteria, ***Pseudomonas aeruginosa*** and ***Staphylococcus aureus***, that co-infect the lungs of people with **cystic fibrosis**. I focus on how *P. aeruginosa* adapts to *S. aureus* over the course of an infection. I want to understand how they adapt and outcompete each other over time. My work is **part wet lab and part bioinformatics**: I run experiments at the bench, then use phylogenetics and sequence data to see what's happening at the genetic level. My advisor is [Tim Read](https://emergent.emory.edu/), whose lab studies bacterial genomics and builds computational tools (like the [Bactopia](https://bactopia.github.io/) pipeline) to understand how pathogens evolve and spread.
 
 A few of the threads I'm pulling on right now:
 
