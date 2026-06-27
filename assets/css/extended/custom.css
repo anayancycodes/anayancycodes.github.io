@@ -1,35 +1,35 @@
 /* ============================================================
    Custom fonts + colors for anayancy.dev
-   Fonts: Fira Code (body) + Fraunces (headings)
-   Palette: Pearl Beige, Crimson Violet, Rosy Taupe, Pale Sky, Baltic Blue
+   Fonts: Georgia (body, serif) + Fraunces (headings) + Fira Code (code)
+   Palette: Eggshell base, Crimson Violet, Rosy Taupe, Pale Sky, Baltic Blue
    All text/background pairs checked for WCAG AA (>= 4.5:1).
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap');
 
 /* ---------- LIGHT THEME ---------- */
 :root {
-  --theme: #E8DAB2;            /* page background (Pearl Beige) */
-  --entry: #F4EDD7;            /* cards / entries (lighter beige) */
+  --theme: #F4EFE2;            /* page background (soft eggshell) */
+  --entry: #F4EFE2;            /* cards/entries — same as page so backgrounds match */
   --primary: #4F0C28;          /* headings + strong text (Crimson Violet) */
   --secondary: #6E2A3A;        /* meta / muted text */
   --tertiary: #BA8F95;         /* buttons / soft accents (Rosy Taupe) */
   --content: #4F0C28;          /* body text */
-  --code-bg: #F4EDD7;          /* inline code background */
+  --code-bg: #EAE1CC;          /* inline code + TOC inset (gentle, with border) */
   --code-block-bg: #3A0A1F;    /* code block background */
-  --border: #D8C29A;           /* borders / rules */
-  --link: #2F4F6E;             /* article links (darkened Baltic Blue) */
+  --border: #D9CDB3;           /* borders / rules */
+  --link: #2F4F6E;             /* article links (Baltic Blue, darkened for contrast) */
 }
 
-/* ---------- DARK THEME ---------- */
+/* ---------- DARK THEME (this PaperMod uses html[data-theme="dark"]) ---------- */
 :root[data-theme="dark"] {
   --theme: #4F0C28;            /* deep crimson background */
-  --entry: #5E1832;            /* cards / entries (lighter crimson) */
+  --entry: #4F0C28;            /* same as page so backgrounds match */
   --primary: #F0E6C8;          /* headings (light beige) */
   --secondary: #C9A9AE;        /* meta / muted text (light rosy) */
   --tertiary: #7A3A50;         /* buttons / soft accents */
   --content: #E8DAB2;          /* body text (Pearl Beige) */
-  --code-bg: #5E1832;          /* inline code background */
+  --code-bg: #5E1832;          /* inline code + TOC inset */
   --code-block-bg: #2E0814;    /* code block background */
   --border: #7A3A50;           /* borders / rules */
   --link: #C0D6DF;             /* article links (Pale Sky) */
@@ -37,7 +37,7 @@
 
 /* ---------- FONTS ---------- */
 body {
-  font-family: 'Fira Code', ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-family: Georgia, "Times New Roman", "Iowan Old Style", serif;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -46,11 +46,11 @@ h1, h2, h3, h4, h5, h6,
 .first-entry .entry-header h1,
 .logo a,
 .profile_inner h1 {
-  font-family: 'Fraunces', Georgia, "Times New Roman", serif;
+  font-family: 'Fraunces', Georgia, serif;
   letter-spacing: 0.2px;
 }
 
-/* code keeps the monospace (Fira Code) */
+/* code keeps a monospace */
 code, pre, kbd, samp {
   font-family: 'Fira Code', ui-monospace, Menlo, monospace;
 }
@@ -62,16 +62,11 @@ code, pre, kbd, samp {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.post-content a:hover {
-  opacity: 0.8;
-}
+.post-content a:hover { opacity: 0.8; }
+
+/* keep list cards readable now that --entry matches the page bg */
+.post-entry { border: 1px solid var(--border); }
 
 /* ---------- SMALL TOUCHES ---------- */
-::selection {
-  background: #C0D6DF;   /* Pale Sky highlight */
-  color: #4F0C28;
-}
-:root[data-theme="dark"] ::selection {
-  background: #BA8F95;   /* Rosy Taupe highlight */
-  color: #2E0814;
-}
+::selection { background: #C0D6DF; color: #4F0C28; }              /* Pale Sky */
+:root[data-theme="dark"] ::selection { background: #BA8F95; color: #2E0814; }  /* Rosy Taupe */
