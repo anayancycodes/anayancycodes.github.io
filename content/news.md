@@ -6,6 +6,12 @@ layout = "single"
 
 A few places my research, organizing, and story have shown up.
 
+## Research, fellowships & academic path
+
+- **[Student Spotlight: Anayancy Ramos Facio](https://gs.emory.edu/happening/studentspotlight/a-ramos-facio.html)** — *Emory Laney Graduate School*, 2024.
+- **[HHMI Names 50 Gilliam Fellows](https://www.hhmi.org/news/hhmi-names-50-gilliam-fellows-milestone-year)** — *Howard Hughes Medical Institute*, 2024.
+- **[Alumni Spotlight: Ana Ramos](https://www.easternct.edu/alumni-and-friends/alumni-spotlights/individual-pages/ana-ramos.html)** — *Eastern Connecticut State University*.
+
 ## Surveillance & immigrant-rights organizing
 
 - **[Emory Students Protest AI Surveillance on Campus](https://atlanta.capitalbnews.org/emory-campus-ai-surveillance-protest/)** — *Capital B News (Atlanta)*, April 2026.
@@ -20,12 +26,6 @@ A few places my research, organizing, and story have shown up.
 - **[American Dreamers: Anayancy Ramos](https://www.nytimes.com/interactive/projects/storywall/american-dreamers/stories/anayancy-ramos)** — *The New York Times*.
 - **[America Has Room for the Dreamers](https://www.nytimes.com/2016/11/23/opinion/america-has-room-for-the-dreamers.html)** — *The New York Times* (Opinion), 2016.
 - **[UConn, CSCU pledge support to preserve DACA program](https://today.uconn.edu/2017/11/uconn-cscu-pledge-support-preserve-daca-program/)** — *UConn Today*, 2017.
-
-## Research, fellowships & academic path
-
-- **[Student Spotlight: Anayancy Ramos Facio](https://gs.emory.edu/happening/studentspotlight/a-ramos-facio.html)** — *Emory Laney Graduate School*, 2024.
-- **[HHMI Names 50 Gilliam Fellows](https://www.hhmi.org/news/hhmi-names-50-gilliam-fellows-milestone-year)** — *Howard Hughes Medical Institute*, 2024.
-- **[Alumni Spotlight: Ana Ramos](https://www.easternct.edu/alumni-and-friends/alumni-spotlights/individual-pages/ana-ramos.html)** — *Eastern Connecticut State University*.
 
 <!--
   To add a new item, copy a line and edit it:
