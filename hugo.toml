@@ -79,9 +79,6 @@ buildFuture = false
   [[params.socialIcons]]
     name = "bluesky"
     url = "https://anayancy.bsky.social"
-  [[params.socialIcons]]
-    name = "rss"
-    url = "/index.xml"
 
   # ---- Search page config (Fuse.js fuzzy search) ----
   [params.fuseOpts]
