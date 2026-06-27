@@ -66,6 +66,14 @@ code, pre, kbd, samp {
 }
 .post-content a:hover { opacity: 0.8; }
 
+/* links inside the homepage profile subtitle (not the Posts/About buttons) */
+.profile_inner a:not(.button) {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.profile_inner a:not(.button):hover { opacity: 0.8; }
+
 /* keep list cards readable now that --entry matches the page bg */
 .post-entry { border: 1px solid var(--border); }
 
