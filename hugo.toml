@@ -44,7 +44,7 @@ buildFuture = false
     favicon = "/favicon.png"
     favicon16x16 = "/favicon.png"
     favicon32x32 = "/favicon.png"
-    apple_touch_icon = "/favicon.png"
+    apple_touch_icon = "/apple-touch-icon.png"
 
   # ---- Homepage: profile mode (photo + bio + buttons) ----
   # Want a blog-style homepage instead (intro text + a feed of recent posts)?

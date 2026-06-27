@@ -1,0 +1,77 @@
+/* ============================================================
+   Custom fonts + colors for anayancy.dev
+   Fonts: Fira Code (body) + Fraunces (headings)
+   Palette: Pearl Beige, Crimson Violet, Rosy Taupe, Pale Sky, Baltic Blue
+   All text/background pairs checked for WCAG AA (>= 4.5:1).
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap');
+
+/* ---------- LIGHT THEME ---------- */
+:root {
+  --theme: #E8DAB2;            /* page background (Pearl Beige) */
+  --entry: #F4EDD7;            /* cards / entries (lighter beige) */
+  --primary: #4F0C28;          /* headings + strong text (Crimson Violet) */
+  --secondary: #6E2A3A;        /* meta / muted text */
+  --tertiary: #BA8F95;         /* buttons / soft accents (Rosy Taupe) */
+  --content: #4F0C28;          /* body text */
+  --code-bg: #F4EDD7;          /* inline code background */
+  --code-block-bg: #3A0A1F;    /* code block background */
+  --border: #D8C29A;           /* borders / rules */
+  --link: #2F4F6E;             /* article links (darkened Baltic Blue) */
+}
+
+/* ---------- DARK THEME ---------- */
+.dark {
+  --theme: #4F0C28;            /* deep crimson background */
+  --entry: #5E1832;            /* cards / entries (lighter crimson) */
+  --primary: #F0E6C8;          /* headings (light beige) */
+  --secondary: #C9A9AE;        /* meta / muted text (light rosy) */
+  --tertiary: #7A3A50;         /* buttons / soft accents */
+  --content: #E8DAB2;          /* body text (Pearl Beige) */
+  --code-bg: #5E1832;          /* inline code background */
+  --code-block-bg: #2E0814;    /* code block background */
+  --border: #7A3A50;           /* borders / rules */
+  --link: #C0D6DF;             /* article links (Pale Sky) */
+}
+
+/* ---------- FONTS ---------- */
+body {
+  font-family: 'Fira Code', ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.entry-header h1, .entry-header h2,
+.first-entry .entry-header h1,
+.logo a,
+.profile_inner h1 {
+  font-family: 'Fraunces', Georgia, "Times New Roman", serif;
+  letter-spacing: 0.2px;
+}
+
+/* code keeps the monospace (Fira Code) */
+code, pre, kbd, samp {
+  font-family: 'Fira Code', ui-monospace, Menlo, monospace;
+}
+
+/* ---------- ARTICLE LINK COLOR ---------- */
+.post-content a,
+.post-content a:visited {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.post-content a:hover {
+  opacity: 0.8;
+}
+
+/* ---------- SMALL TOUCHES ---------- */
+::selection {
+  background: #C0D6DF;   /* Pale Sky highlight */
+  color: #4F0C28;
+}
+.dark ::selection {
+  background: #BA8F95;   /* Rosy Taupe highlight */
+  color: #2E0814;
+}
