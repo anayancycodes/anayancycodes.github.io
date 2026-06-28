@@ -8,7 +8,9 @@ layout = "single"
 
 Hi, I'm **Anayancy**. I'm a microbiology PhD student at [**Emory**](https://biomed.emory.edu/PROGRAM_SITES/MMG/), going into my 5th year, and an [**HHMI Gilliam Fellow**](https://www.hhmi.org/programs/gilliam-fellows) ('24–'27), [**Robert W. Woodruff Fellow**](https://woodruffscholars.emory.edu/scholars/scholar-qualities.html), and [**Centennial Scholars Fellow**](https://gs.emory.edu/admissions/finance_overview.html).
 
-## My research
+---
+
+## Research Interests
 
 I study two bacteria, ***Pseudomonas aeruginosa*** and ***Staphylococcus aureus***, that co-infect the lungs of people with **cystic fibrosis**. I focus on how *P. aeruginosa* adapts to *S. aureus* over the course of an infection. I want to understand how they adapt and outcompete each other over time. My work is **part wet lab and part bioinformatics**: I run experiments at the bench, then use phylogenetics and sequence data to see what's happening at the genetic level. My advisor is [Tim Read](https://emergent.emory.edu/), whose lab studies bacterial genomics and builds computational tools (like the [Bactopia](https://bactopia.github.io/) pipeline) to understand how pathogens evolve and spread.
 
@@ -20,6 +22,8 @@ A few of the threads I'm pulling on right now:
 
 You can find my [publications here](/publications/).
 
+---
+
 ## Organizing
 
 Outside the lab (though I'd argue it isn't really *outside*), I'm a labor organizer. I'm the **elected VP of Communications** for [**EmoryUnite!**](https://emoryunite.org/), our graduate-worker union, and I lead its **International Student Working Group**. EmoryUnite! won its union election in 2023 and ratified its first contract with Emory in 2025; I stepped into organizing in 2026.
@@ -30,13 +34,20 @@ I organize because the people who do the teaching, research, and care work that 
 
 I also mentor undergraduate researchers, because *who* gets to do science matters to me as much as the science itself.
 
-## On being public
+### On the Record
 
-I'm a **DACA recipient**, and I don't hide it. I almost didn't make it to college. DACA students in Georgia can't access federal aid or state tuition assistance, and I'm here because of programs like [TheDream.US Opportunity Scholarship](https://www.thedream.us/scholarships/opportunity-scholarship/) and people who decided to invest in me. Staying quiet keeps no one safe, so I'd rather use whatever platform I have. If that's not for you, that's okay.
+I'm a **DACA recipient**, and I don't hide it. I almost didn't make it to college. DACA students in Georgia can't access federal aid or state tuition assistance, and I'm here because of programs like [TheDream.US Opportunity Scholarship](https://www.thedream.us/scholarships/opportunity-scholarship/) and people who decided to invest in me. Staying quiet keeps no one safe, so I use whatever platform I have.
 
-## Why this site
+---
 
-I made this to keep notes on what I'm learning, mostly in R, and to share pieces of my research and the computational side of biology as I go. If any of it turns out to be useful to you, even better.
+## This Site
+
+I keep this site as a place to think out loud. Some of it is the science and bioinformatics I'm working through. Some of it is organizing, and what I'm learning about power and people. Some of it is stories and resources worth passing on, like a little bulletin board. It's all one project.
+
+I don't want to do science from inside the ivory tower, sealed off from my community and everything happening in the world. Instead of running *away* from that discomfort, I think we should run *toward* it. That's how things actually change.
+
+
+---
 
 ## Find me
 

@@ -91,6 +91,25 @@ details.toc,
   border: 1px solid var(--border);
 }
 
+/* ---------- SECTION DIVIDER (✦) ---------- */
+.post-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  overflow: visible;
+  margin: 2.4rem 0;
+  text-align: center;
+}
+.post-content hr::after {
+  content: "✦";
+  display: inline-block;
+  position: relative;
+  top: -0.72em;
+  background: var(--theme);
+  color: var(--secondary);
+  padding: 0 1rem;
+  font-size: 0.95rem;
+}
+
 /* ---------- SMALL TOUCHES ---------- */
 ::selection { background: #C0D6DF; color: #4F0C28; }              /* Pale Sky */
 :root[data-theme="dark"] ::selection { background: #BA8F95; color: #2E0814; }  /* Rosy Taupe */
