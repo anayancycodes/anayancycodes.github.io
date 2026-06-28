@@ -108,6 +108,11 @@ buildFuture = false
     url = "/about/"
     weight = 20
   [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "/anayancy-ramos-cv.pdf"
+    weight = 22
+  [[menu.main]]
     identifier = "news"
     name = "In the News"
     url = "/news/"
