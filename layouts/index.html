@@ -1,0 +1,123 @@
+{{- define "main" }}
+
+{{/* ============================================================
+     Custom 3-column homepage for anayancy.dev
+     Content for the widgets lives in hugo.toml under [params.widgets]
+     so you can edit text without touching this file.
+     ============================================================ */}}
+
+<div class="home-masthead">
+  {{- with site.Params.profileMode.imageUrl }}
+  <img class="home-avatar" src="{{ . | absURL }}" alt="{{ site.Title }}" width="110" height="110">
+  {{- end }}
+  <h1 class="home-name">{{ site.Title }}</h1>
+  {{- with site.Params.tagline }}
+  <p class="home-tagline"><span class="fl">&#10022;</span>{{ . }}<span class="fl">&#10022;</span></p>
+  {{- end }}
+</div>
+
+<div class="home-cols">
+
+  {{/* ---------- LEFT SIDEBAR ---------- */}}
+  <aside class="home-side home-side-left">
+
+    {{- with site.Params.widgets.currently }}
+    <section class="widget">
+      <h2 class="widget-title">currently</h2>
+      <ul class="widget-list">
+        {{- if (or .fiction .nonfiction) }}
+        <li>
+          <span class="widget-label">reading</span>
+          {{- with .fiction }}<div class="widget-sub"><span class="arrow">&#8627;</span> fiction: {{ . | markdownify }}</div>{{ end }}
+          {{- with .nonfiction }}<div class="widget-sub"><span class="arrow">&#8627;</span> nonfiction: {{ . | markdownify }}</div>{{ end }}
+        </li>
+        {{- end }}
+        {{- if (or .podcast .song) }}
+        <li>
+          <span class="widget-label">listening</span>
+          {{- with .podcast }}<div class="widget-sub"><span class="arrow">&#8627;</span> podcast: {{ . | markdownify }}</div>{{ end }}
+          {{- with .song }}<div class="widget-sub"><span class="arrow">&#8627;</span> stuck in my head: {{ . | markdownify }}</div>{{ end }}
+        </li>
+        {{- end }}
+      </ul>
+    </section>
+    {{- end }}
+
+    {{- with site.Params.widgets.lab }}
+    <section class="widget">
+      <h2 class="widget-title">the lab</h2>
+      <p>
+        {{- if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
+        {{- with .fullName }}<br><span class="widget-label">{{ . }}</span>{{ end }}
+      </p>
+      {{- with .advisor }}
+      <p>Advised by {{ if $.Site.Params.widgets.lab.advisorUrl }}<a href="{{ $.Site.Params.widgets.lab.advisorUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</p>
+      {{- end }}
+      {{- with .tags }}
+      <p class="widget-tags">{{ range . }}<span class="widget-tag">{{ . }}</span>{{ end }}</p>
+      {{- end }}
+    </section>
+    {{- end }}
+
+    {{- with site.Params.widgets.lastUpdated }}
+    <p class="widget-updated">last updated {{ . }}</p>
+    {{- end }}
+  </aside>
+
+  {{/* ---------- CENTER ---------- */}}
+  <div class="home-main">
+    {{- with site.Params.homeIntro }}
+      {{- range . }}<p>{{ . | markdownify }}</p>{{ end }}
+    {{- end }}
+
+    {{- $posts := where site.RegularPages "Type" "posts" }}
+    {{- if $posts }}
+    <hr class="home-rule">
+    {{- range first 5 $posts }}
+    <article class="home-post">
+      <div class="home-post-meta">{{ .Date.Format "January 2, 2006" }}{{ if .Params.tags }} &middot; {{ delimit .Params.tags ", " }}{{ end }}</div>
+      <h2 class="home-post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <p>{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+      <a class="home-post-more" href="{{ .Permalink }}">read more &rarr;</a>
+    </article>
+    {{- end }}
+    {{- end }}
+  </div>
+
+  {{/* ---------- RIGHT SIDEBAR ---------- */}}
+  <aside class="home-side home-side-right">
+
+    {{- with site.Params.socialIcons }}
+    <section class="widget">
+      <h2 class="widget-title">elsewhere</h2>
+      <ul class="widget-list">
+        {{- range . }}
+        <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name | humanize }}</a></li>
+        {{- end }}
+      </ul>
+    </section>
+    {{- end }}
+
+    {{- with site.Params.widgets.news }}
+    <section class="widget">
+      <h2 class="widget-title">in the news</h2>
+      <ul class="widget-list">
+        {{- range . }}
+        <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a></li>
+        {{- end }}
+      </ul>
+      <p class="widget-more"><a href="{{ "news/" | absURL }}">all coverage &rarr;</a></p>
+    </section>
+    {{- end }}
+
+    {{- with site.Params.widgets.organizing }}
+    <section class="widget">
+      <h2 class="widget-title">organizing</h2>
+      <p>{{ .role }}, {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .org }}</a>{{ else }}{{ .org }}{{ end }}</p>
+    </section>
+    {{- end }}
+  </aside>
+
+</div>
+
+{{- end }}{{/* end main */}}

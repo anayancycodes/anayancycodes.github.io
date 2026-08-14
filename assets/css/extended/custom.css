@@ -110,6 +110,93 @@ details.toc,
   font-size: 0.95rem;
 }
 
+/* ============================================================
+   HOMEPAGE: 3-column layout with sidebar widgets
+   ============================================================ */
+
+/* let the homepage breathe wider than the default 720px column */
+.main:has(.home-cols) { max-width: 1120px; }
+
+/* ---- masthead ---- */
+.home-masthead { text-align: center; padding: 6px 0 4px; }
+.home-avatar {
+  width: 110px; height: 110px; border-radius: 50%;
+  object-fit: cover; border: 3px solid var(--border);
+}
+.home-name {
+  font-family: 'Fraunces', Georgia, serif;
+  color: var(--primary);
+  font-size: 2.1rem; margin: 12px 0 6px;
+}
+.home-tagline {
+  font-family: 'Fraunces', Georgia, serif;
+  color: var(--tertiary);
+  font-size: 0.78rem; letter-spacing: 2.5px; text-transform: uppercase;
+  margin: 0 0 18px;
+}
+.home-tagline .fl { opacity: 0.7; margin: 0 8px; }
+
+/* ---- the 3-column grid ---- */
+.home-cols {
+  display: grid;
+  grid-template-columns: 205px 1fr 200px;
+  gap: 26px;
+  border-top: 1px solid var(--border);
+  padding-top: 22px;
+}
+
+/* ---- sidebars ---- */
+.home-side { font-size: 0.85rem; line-height: 1.6; }
+.home-side .widget { margin-bottom: 24px; }
+.home-side p { margin: 0 0 8px; }
+.widget-title {
+  font-family: 'Fraunces', Georgia, serif;
+  color: var(--tertiary);
+  font-size: 1rem; letter-spacing: 1px; text-transform: lowercase;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 3px; margin: 0 0 8px;
+}
+.widget-list { list-style: none; padding: 0; margin: 0; }
+.widget-list li { margin: 5px 0; }
+.widget-label { color: var(--secondary); }
+.widget-sub { padding-left: 0.55rem; }
+.widget-sub .arrow { color: var(--tertiary); }
+.home-side a { color: var(--link); text-decoration: none; }
+.home-side a:hover { text-decoration: underline; }
+.widget-tag {
+  display: inline-block; font-size: 0.76rem;
+  border: 1px solid var(--border); border-radius: 4px;
+  padding: 1px 6px; margin: 2px 3px 2px 0; color: var(--secondary);
+}
+.widget-more { font-size: 0.8rem; margin-top: 6px; }
+.widget-updated {
+  border-top: 1px solid var(--border);
+  padding-top: 8px; margin-top: 30px;
+  font-size: 0.76rem; color: var(--secondary); font-style: italic;
+}
+
+/* ---- center column ---- */
+.home-main p { margin: 0 0 12px; }
+.home-rule { border: 0; border-top: 1px solid var(--border); margin: 22px 0; }
+.home-post { margin-bottom: 22px; }
+.home-post-meta { color: var(--secondary); font-size: 0.8rem; margin-bottom: 4px; }
+.home-post-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.2rem; margin: 0 0 4px;
+}
+.home-post-title a { color: var(--primary); text-decoration: none; }
+.home-post-more { color: var(--link); text-decoration: none; font-size: 0.9rem; }
+
+/* ---- mobile / tablet: stack to one column ---- */
+@media (max-width: 900px) {
+  .home-cols { grid-template-columns: 1fr; gap: 4px; }
+  .home-side { font-size: 0.9rem; }
+  .home-main { order: -1; }              /* intro + posts first on small screens */
+  .home-side-left  { order: 1; }
+  .home-side-right { order: 2; }
+  .widget-updated { margin-top: 12px; }
+}
+
 /* ---------- SMALL TOUCHES ---------- */
 ::selection { background: #C0D6DF; color: #4F0C28; }              /* Pale Sky */
 :root[data-theme="dark"] ::selection { background: #BA8F95; color: #2E0814; }  /* Rosy Taupe */

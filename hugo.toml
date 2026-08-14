@@ -39,6 +39,53 @@ buildFuture = false
   ShowWordCount = true
   comments = false                             # turn on later if you add a comment system
 
+  # ---- Homepage tagline (shown under your name) ----
+  tagline = "studying competition · practicing solidarity"
+
+  # ---- Homepage intro paragraphs (center column) ----
+  homeIntro = [
+    "I'm a PhD student in Microbiology & Molecular Genetics at [Emory](https://biomed.emory.edu/PROGRAM_SITES/MMG/), going into my 5th year, and an [HHMI Gilliam Fellow](https://www.hhmi.org/programs/gilliam-fellows).",
+    "I study two bacteria, *Pseudomonas aeruginosa* and *Staphylococcus aureus*, that co-infect the lungs of people with cystic fibrosis, and how *P. aeruginosa* adapts to *S. aureus* over the course of an infection. My work is part wet lab and part bioinformatics: I run experiments at the bench, then use phylogenetics and sequence data to see what's happening at the genetic level.",
+    "I write here to think out loud, mostly in R, and to share pieces of my research and organizing.",
+  ]
+
+  # ============================================================
+  #  HOMEPAGE SIDEBAR WIDGETS — edit the text below anytime.
+  #  Leave a value as "" to hide that line.
+  # ============================================================
+  [params.widgets]
+    lastUpdated = "Aug. 5, 2026"        # EDIT when you refresh "currently"
+
+    [params.widgets.currently]
+      fiction    = "*Video Palace: In Search of the Eyeless Man*"
+      nonfiction = "*Feminism Is for Everybody*, bell hooks"
+      podcast    = ""                    # EDIT
+      song       = ""                    # EDIT
+
+    [params.widgets.lab]
+      name       = "EMERGENT"
+      url        = "https://emergent.emory.edu/"
+      fullName   = "Emory Bacterial Genomics & Metagenomics"
+      advisor    = "Tim Read"
+      advisorUrl = "https://emergent.emory.edu/"
+      tags       = ["Bactopia", "R", "phylogenetics"]
+
+    [params.widgets.organizing]
+      role = "VP of Communications"
+      org  = "EmoryUnite!"
+      url  = "https://emoryunite.org/"
+
+    # "in the news" — a few highlights; full list lives on /news/
+    [[params.widgets.news]]
+      title = "Capital B — AI surveillance protest"
+      url   = "https://atlanta.capitalbnews.org/emory-campus-ai-surveillance-protest/"
+    [[params.widgets.news]]
+      title = "Atlanta Civic Circle — DeFlock Emory"
+      url   = "https://atlantaciviccircle.org/2026/04/13/deflock-emory-coalition-flock-license-cameras-petition/"
+    [[params.widgets.news]]
+      title = "NYT — American Dreamers"
+      url   = "https://www.nytimes.com/interactive/projects/storywall/american-dreamers/stories/anayancy-ramos"
+
   # ---- Favicon (rescued from your old site) ----
   [params.assets]
     favicon = "/favicon.png"
