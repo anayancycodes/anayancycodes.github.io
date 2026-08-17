@@ -120,6 +120,8 @@ details.toc,
 /* ---- masthead ---- */
 .home-masthead { text-align: center; padding: 6px 0 4px; }
 .home-avatar {
+  display: block;
+  margin: 0 auto;                 /* always centered above the columns */
   width: 110px; height: 110px; border-radius: 50%;
   object-fit: cover; border: 3px solid var(--border);
 }

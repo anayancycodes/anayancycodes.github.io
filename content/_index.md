@@ -32,7 +32,7 @@ I also mentor undergraduate researchers, because *who* gets to do science matter
 
 ### On the Record
 
-I'm a **DACA recipient**, and I don't hide it. I almost didn't make it to college. DACA students in Georgia can't access federal aid or state tuition assistance, and I'm here because of programs like [TheDream.US Opportunity Scholarship](https://www.thedream.us/scholarships/opportunity-scholarship/) and people who decided to invest in me. Staying quiet keeps no one safe, so I use whatever platform I have.
+I'm a **DACA recipient**, and I don't hide it. I almost didn't make it to college. DACA students in Georgia can't access federal aid or state tuition assistance, and I'm here because of programs like [TheDream.US Opportunity Scholarship](https://www.thedream.us/scholarships/opportunity-scholarship/) and people who decided to invest in me. Staying quiet keeps no one safe, so I use whatever platform I have to help the people coming up behind me and to improve conditions for the people under attack right now.
 
 ---
 
