@@ -1,10 +1,6 @@
 +++
-title = "About"
-date = 2026-06-27
-layout = "single"
+title = "Home"
 +++
-
-{{< figure src="/images/avatar.png" alt="Anayancy Ramos" width="180" align="center" >}}
 
 Hi, I'm **Anayancy**. I'm a microbiology PhD student at [**Emory**](https://biomed.emory.edu/PROGRAM_SITES/MMG/), going into my 5th year, and an [**HHMI Gilliam Fellow**](https://www.hhmi.org/programs/gilliam-fellows) ('24–'27), [**George W. Woodruff Fellow**](https://woodruffscholars.emory.edu/scholars/scholar-qualities.html), and [**Centennial Scholar Fellow**](https://gs.emory.edu/admissions/finance_overview.html).
 
@@ -45,12 +41,3 @@ I'm a **DACA recipient**, and I don't hide it. I almost didn't make it to colleg
 I keep this site as a place to think out loud. Some of it is the science and bioinformatics I'm working through. Some of it is organizing, and what I'm learning about power and people. Some of it is stories and resources worth passing on, like a little bulletin board. It's all one project.
 
 I don't want to do science from inside the ivory tower, sealed off from my community and everything happening in the world. Instead of running *away* from that discomfort, I think we should run *toward* it. That's how things actually change.
-
-
----
-
-## Find me
-
-- GitHub: [@anayancycodes](https://github.com/anayancycodes)
-- LinkedIn: [anayancy-ramos](https://www.linkedin.com/in/anayancy-ramos/)
-- Bluesky: [@anayancy.bsky.social](https://anayancy.bsky.social)

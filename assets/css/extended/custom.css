@@ -169,6 +169,7 @@ details.toc,
   padding: 1px 6px; margin: 2px 3px 2px 0; color: var(--secondary);
 }
 .widget-more { font-size: 0.8rem; margin-top: 6px; }
+.widget-postdate { color: var(--secondary); font-size: 0.76rem; }
 .widget-updated {
   border-top: 1px solid var(--border);
   padding-top: 8px; margin-top: 30px;

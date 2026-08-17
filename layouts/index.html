@@ -65,27 +65,28 @@
   </aside>
 
   {{/* ---------- CENTER ---------- */}}
-  <div class="home-main">
-    {{- with site.Params.homeIntro }}
-      {{- range . }}<p>{{ . | markdownify }}</p>{{ end }}
-    {{- end }}
-
-    {{- $posts := where site.RegularPages "Type" "posts" }}
-    {{- if $posts }}
-    <hr class="home-rule">
-    {{- range first 5 $posts }}
-    <article class="home-post">
-      <div class="home-post-meta">{{ .Date.Format "January 2, 2006" }}{{ if .Params.tags }} &middot; {{ delimit .Params.tags ", " }}{{ end }}</div>
-      <h2 class="home-post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-      <p>{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
-      <a class="home-post-more" href="{{ .Permalink }}">read more &rarr;</a>
-    </article>
-    {{- end }}
-    {{- end }}
+  <div class="home-main post-content">
+    {{ .Content }}
   </div>
 
   {{/* ---------- RIGHT SIDEBAR ---------- */}}
   <aside class="home-side home-side-right">
+
+    {{- $posts := where site.RegularPages "Type" "posts" }}
+    {{- if $posts }}
+    <section class="widget">
+      <h2 class="widget-title">recent posts</h2>
+      <ul class="widget-list">
+        {{- range first 4 $posts }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <div class="widget-postdate">{{ .Date.Format "Jan 2, 2006" }}</div>
+        </li>
+        {{- end }}
+      </ul>
+      <p class="widget-more"><a href="{{ "posts/" | absURL }}">all posts &rarr;</a></p>
+    </section>
+    {{- end }}
 
     {{- with site.Params.socialIcons }}
     <section class="widget">
