@@ -23,9 +23,9 @@ A few places my research, organizing, and story have shown up.
 
 ## My story as a Dreamer
 
-- **[American Dreamers: Anayancy Ramos](https://www.nytimes.com/interactive/projects/storywall/american-dreamers/stories/anayancy-ramos)** — *The New York Times*.
-- **[America Has Room for the Dreamers](https://www.nytimes.com/2016/11/23/opinion/america-has-room-for-the-dreamers.html)** — *The New York Times* (Opinion), 2016.
-- **[UConn, CSCU pledge support to preserve DACA program](https://today.uconn.edu/2017/11/uconn-cscu-pledge-support-preserve-daca-program/)** — *UConn Today*, 2017.
+- **[American Dreamers: Anayancy Ramos](https://www.nytimes.com/interactive/projects/storywall/american-dreamers/stories/anayancy-ramos)** — *The New York Times*. My own essay on growing up as a Dreamer.
+- **[America Has Room for the Dreamers](https://www.nytimes.com/2016/11/23/opinion/america-has-room-for-the-dreamers.html)** — *The New York Times* (Opinion), 2016. The Editorial Board names me among the Dreamers at stake.
+- **[UConn, CSCU Pledge Support to Preserve DACA Program](https://today.uconn.edu/2017/11/uconn-cscu-pledge-support-preserve-daca-program/)** — *UConn Today*, 2017. My case was cited in the universities' amicus brief defending DACA.
 
 <!--
   To add a new item, copy a line and edit it:
