@@ -40,7 +40,13 @@
 /* ---------- FONTS ---------- */
 body {
   font-family: Georgia, "Times New Roman", "Iowan Old Style", serif;
+  /* Georgia runs large, so step the base size down a touch.
+     Nudge this if you want bigger/smaller text site-wide. */
+  font-size: 17px;
 }
+
+/* body copy on pages and posts */
+.post-content { font-size: 1rem; line-height: 1.7; }
 
 h1, h2, h3, h4, h5, h6,
 .post-title,
