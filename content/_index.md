@@ -22,13 +22,19 @@ You can find my [publications here](/publications/).
 
 ## Organizing
 
-Outside the lab (though I'd argue it isn't really *outside*), I'm a labor organizer. I'm the **elected VP of Communications** for [**EmoryUnite!**](https://emoryunite.org/), our graduate-worker union, and I lead its **International Student Working Group**. EmoryUnite! won its union election in 2023 and ratified its first contract with Emory in 2025; I stepped into organizing in 2026.
+Outside the lab (though I'd argue it isn't really *outside*), I organize.
 
-As lead of the International Student Working Group, I helped organize the **DeFlock Emory Coalition**, a cross-campus effort to remove Flock Safety's automated license-plate readers from our campus. We collected over 1,000 petition signatures, built relationships with AAUP and student groups, and produced teach-in, op-ed, and outreach materials that made the stakes legible to our community. I've also led a session on anti-racist practices in my PhD program and pushed for a more transparent, equitable recruitment process.
+I helped lead the **DeFlock Emory Coalition**, a cross-campus effort to remove Flock Safety's automated license-plate readers from our campus. We collected over 1,000 petition signatures, built relationships with AAUP and student groups, and produced teach-in, op-ed, and outreach materials that made the stakes legible to our community. Campus surveillance is not abstract for undocumented people, and I've spoken publicly about what it costs to be watched at the place where you work.
+
+I've also led a session on anti-racist practices in my PhD program and pushed for a more transparent, equitable recruitment process, and I mentor undergraduate researchers, because *who* gets to do science matters to me as much as the science itself.
+
+A few of the seats I hold right now:
+
+- **HHMI Gilliam Advisory Council**, elected representative (2026–2027). I work with HHMI and the Gilliam team to strengthen communication with the Fellows community and to shape the Gilliam Fellows Program through concrete recommendations.
+- **Emory University Senate, Community Life Committee**, appointed graduate student representative (2026–2027).
+- **VP of Communications** for [EmoryUnite!](https://emoryunite.org/), our graduate-worker union, elected by the membership. I also lead the International Student Working Group.
 
 I organize because the people who do the teaching, research, and care work that keep a university running deserve a real say in their conditions, and because international, undocumented, and other vulnerable workers are too often left out of that conversation. Again and again, I've watched decisions get made for marginalized communities without their input, by people who assume they already know what's best.
-
-I also mentor undergraduate researchers, because *who* gets to do science matters to me as much as the science itself.
 
 ### On the Record
 
