@@ -11,6 +11,7 @@ A few places my research, organizing, and story have shown up.
 - **[Student Spotlight: Anayancy Ramos Facio](https://gs.emory.edu/happening/studentspotlight/a-ramos-facio.html)** — *Emory Laney Graduate School*, 2024.
 - **[HHMI Names 50 Gilliam Fellows](https://www.hhmi.org/news/hhmi-names-50-gilliam-fellows-milestone-year)** — *Howard Hughes Medical Institute*, 2024.
 - **[Alumni Spotlight: Ana Ramos](https://www.easternct.edu/alumni-and-friends/alumni-spotlights/individual-pages/ana-ramos.html)** — *Eastern Connecticut State University*.
+- **[Biology Students Present at Annual ECSC Conference](https://www.easternct.edu/news/_stories-and-releases/2019/05-may/biology-students-present-at-annual-ecsc-conference.html)** — *Eastern Connecticut State University*, 2019. My poster on the PubMed Central citation tool, presented at the 73rd Annual Eastern Colleges Science Conference.
 
 ## Surveillance & immigrant-rights organizing
 
