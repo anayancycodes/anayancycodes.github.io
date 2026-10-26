@@ -15,6 +15,10 @@ A few places my research, organizing, and story have shown up.
 
 ## Surveillance & immigrant-rights organizing
 
+- **[AUC Students Say Flock Surveillance Cameras Threaten Their Privacy and Safety](https://atlanta.capitalbnews.org/atlanta-flock-cameras-auc-protest/)** — *Capital B News (Atlanta)*, October 2026. I'm quoted on what the Emory win means for other campuses.
+- **[Campus advocacy groups' work persists after last semester's protests](https://emorywheel.com/article/campus-advocacy-groups-work-persists-after-last-semester-s-protests-20261021)** — *The Emory Wheel*, October 2026.
+- **[Emory removes Flock Safety cameras from campus](https://emorywheel.com/article/emory-removes-flock-safety-cameras-from-campus-20260909)** — *The Emory Wheel*, September 2026. Emory discontinued its Flock contract effective September 1 and removed the cameras.
+- **[Tracing student activism at Emory University from 1960 to now](https://emorywheel.com/article/tracing-student-activism-at-emory-university-from-1960-to-now-20260514)** — *The Emory Wheel*, May 2026.
 - **[Emory Students Protest AI Surveillance on Campus](https://atlanta.capitalbnews.org/emory-campus-ai-surveillance-protest/)** — *Capital B News (Atlanta)*, April 2026.
 - **[Emory students speak out against license-plate readers on campus](https://www.atlantanewsfirst.com/2026/04/11/emory-students-speak-out-against-license-plate-readers-campus/)** — *Atlanta News First*, April 2026. (Includes a clip of my speech.)
 - **[DeFlock Emory Coalition demands university remove Flock license-plate cameras](https://atlantaciviccircle.org/2026/04/13/deflock-emory-coalition-flock-license-cameras-petition/)** — *Atlanta Civic Circle*, April 2026.

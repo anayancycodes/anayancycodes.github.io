@@ -24,7 +24,7 @@ You can find my [publications here](/publications/).
 
 Outside the lab (though I'd argue it isn't really *outside*), I organize.
 
-I helped lead the **DeFlock Emory Coalition**, a cross-campus effort to remove Flock Safety's automated license-plate readers from our campus. We collected over 1,000 petition signatures, built relationships with AAUP and student groups, and produced teach-in, op-ed, and outreach materials that made the stakes legible to our community. Campus surveillance is not abstract for undocumented people, and I've spoken publicly about what it costs to be watched at the place where you work.
+I helped lead the **DeFlock Emory Coalition**, a cross-campus effort to remove Flock Safety's automated license-plate readers from our campus. We collected over 1,000 petition signatures, built relationships with AAUP and student groups, and produced teach-in, op-ed, and outreach materials that made the stakes legible to our community. **In September 2026, Emory discontinued its Flock contract and the cameras came down.** Campus surveillance is not abstract for undocumented people, and I've spoken publicly about what it costs to be watched at the place where you work. There is more to do, but it was proof that when we organize together, the university has to listen.
 
 I've also led a session on anti-racist practices in my PhD program and pushed for a more transparent, equitable recruitment process, and I mentor undergraduate researchers, because *who* gets to do science matters to me as much as the science itself.
 
