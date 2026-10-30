@@ -1,0 +1,3 @@
+{{- /* Render a Markdown string WITHOUT the wrapping <p>, so the result can sit
+       inside an <h1> or <p>.  Usage:  {{ partial "inline-md.html" .headline }}  */ -}}
+{{- . | markdownify | replaceRE `^<p>(?s:(.*))</p>\s*$` "$1" | safeHTML -}}

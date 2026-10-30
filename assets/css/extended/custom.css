@@ -5,7 +5,7 @@
    All text/background pairs checked for WCAG AA (>= 4.5:1).
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Playfair+Display:ital,wght@1,500;1,600;1,700&display=swap');
 
 /* ---------- LIGHT THEME ---------- */
 :root {
@@ -20,6 +20,9 @@
   --border: #D9CDB3;           /* borders / rules */
   --link: #2F4F6E;             /* article links (Baltic Blue, darkened for contrast) */
   --toc-bg: #E8DAB2;           /* table-of-contents panel (darker eggshell / Pearl Beige) */
+  --accent: #8C4A5A;           /* italic accent words + section labels (Deep Rose) */
+  --soft: #F2DEE2;             /* photo blob, ticker band, callout box (Blush) */
+  --card: #FFFDF7;             /* sidebar card background */
 }
 
 /* ---------- DARK THEME (this PaperMod uses html[data-theme="dark"]) ---------- */
@@ -35,6 +38,9 @@
   --border: #7A3A50;           /* borders / rules */
   --link: #C0D6DF;             /* article links (Pale Sky) */
   --toc-bg: #6B2238;           /* table-of-contents panel (lighter crimson, contrasting) */
+  --accent: #E6B9C2;           /* italic accent words + section labels */
+  --soft: #6B2238;             /* photo blob, ticker band, callout box */
+  --card: #5E1832;             /* sidebar card background */
 }
 
 /* ---------- FONTS ---------- */
@@ -117,52 +123,181 @@ details.toc,
 }
 
 /* ============================================================
-   HOMEPAGE: 3-column layout with sidebar widgets
+   WORDMARK — your name, in Playfair Display italic.
+   Appears in the site header (every page) and in the footer.
+   ============================================================ */
+.logo a {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 2.3rem;
+  line-height: 1.15;
+  letter-spacing: 0.2px;
+  color: var(--primary);
+}
+@media (max-width: 600px) { .logo a { font-size: 1.7rem; } }
+
+/* PaperMod's own footer is switched off (hideFooter in hugo.toml); this block
+   replaces it, so the wordmark and credits render in the right order. */
+.ed-signoff {
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  width: 100%;
+  margin: 46px auto 0;
+  padding: 16px var(--gap) 0;
+  border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 10px;
+}
+.ed-signoff-mark {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic; font-weight: 600; font-size: 1.3rem;
+  color: var(--primary); text-decoration: none;
+}
+.ed-signoff-tag {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 0.72rem; letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--accent);
+}
+.ed-credits {
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  margin: 10px auto 0;
+  padding: 0 var(--gap) 30px;
+  font-size: 12px; line-height: 24px;
+  color: var(--secondary);
+}
+.ed-credits a { color: var(--secondary); text-decoration: underline; text-underline-offset: 2px; }
+
+/* ============================================================
+   HOMEPAGE — editorial hero + two-column body
    ============================================================ */
 
 /* let the homepage breathe wider than the default 720px column */
-.main:has(.home-cols) { max-width: 1120px; }
+.main:has(.ed-cols) { max-width: 1120px; }
 
-/* ---- masthead ---- */
-.home-masthead { text-align: center; padding: 6px 0 4px; }
-.home-avatar {
-  display: block;
-  margin: 0 auto;                 /* always centered above the columns */
-  width: 110px; height: 110px; border-radius: 50%;
-  object-fit: cover; border: 3px solid var(--border);
-}
-.home-name {
+/* ---- small-caps section label ---- */
+.ed-label {
   font-family: 'Fraunces', Georgia, serif;
-  color: var(--primary);
-  font-size: 2.1rem; margin: 12px 0 6px;
+  font-size: 0.72rem; letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px !important;
 }
-.home-tagline {
-  font-family: 'Fraunces', Georgia, serif;
-  color: var(--tertiary);
-  font-size: 0.78rem; letter-spacing: 2.5px; text-transform: uppercase;
-  margin: 0 0 18px;
-}
-.home-tagline .fl { opacity: 0.7; margin: 0 8px; }
 
-/* ---- the 3-column grid ---- */
-.home-cols {
+/* ---- hero ---- */
+.ed-hero {
   display: grid;
-  grid-template-columns: 205px 1fr 200px;
-  gap: 26px;
-  border-top: 1px solid var(--border);
-  padding-top: 22px;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 36px; align-items: center;
+  padding: 8px 0 26px;
+}
+.ed-headline {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 3.1rem; line-height: 1.07; font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 16px;
+}
+.ed-headline em { font-style: italic; color: var(--accent); }
+.ed-intro { font-size: 1.02rem; line-height: 1.6; margin: 0 0 10px; }
+.ed-intro a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; }
+
+.ed-pills { margin: 14px 0 0; }
+.ed-pills a {
+  display: inline-block;
+  background: var(--primary); color: var(--theme);
+  text-decoration: none; border-radius: 999px;
+  padding: 10px 22px; font-size: 0.9rem; margin: 0 10px 10px 0;
+  border: 1.5px solid var(--primary);
+}
+.ed-pills a.alt { background: transparent; color: var(--primary); }
+.ed-pills a:hover { opacity: 0.85; }
+
+.ed-shot { position: relative; }
+.ed-blob {
+  position: absolute; inset: 14px -10px -14px 14px;
+  background: var(--soft);
+  border-radius: 50% 50% 48% 52% / 52% 48% 52% 48%;
+}
+.ed-shot img {
+  position: relative; width: 100%; height: auto;
+  border-radius: 8px; display: block; object-fit: cover;
 }
 
-/* ---- sidebars ---- */
+/* ---- scrolling ticker band ---- */
+.ed-marquee {
+  overflow: hidden;
+  background: var(--soft);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.ed-marquee-run {
+  display: flex; gap: 18px; white-space: nowrap;
+  padding: 10px 0;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 0.78rem; letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--primary);
+  animation: ed-slide 28s linear infinite;
+}
+.ed-marquee-dot { color: var(--tertiary); }
+@keyframes ed-slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ed-marquee-run { animation: none; } }
+
+/* ---- two-column body ---- */
+.ed-cols {
+  display: grid;
+  grid-template-columns: 1fr 268px;
+  gap: 38px;
+  padding-top: 30px;
+}
+.ed-body h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.85rem; font-weight: 600;
+  margin: 0 0 10px;
+}
+.ed-body h2 em { font-style: italic; color: var(--accent); }
+.ed-body > section, .ed-body .ed-block { margin-bottom: 30px; }
+.ed-body .ed-label { margin-top: 32px !important; }
+.ed-body > .ed-label:first-child { margin-top: 0 !important; }
+
+/* callout box for a result worth seeing */
+.ed-win {
+  background: var(--soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 2px 18px; margin: 16px 0;
+}
+.ed-win strong { font-family: 'Fraunces', Georgia, serif; }
+
+.ed-more {
+  display: inline-block;
+  color: var(--link); text-decoration: none;
+  border-bottom: 1px solid var(--tertiary);
+  font-size: 0.92rem; margin-top: 4px;
+}
+.ed-more:hover { opacity: 0.8; }
+
+/* recent posts inside the body */
+.ed-post { padding: 14px 0; border-top: 1px solid var(--border); }
+.ed-post-meta { font-size: 0.8rem; color: var(--secondary); }
+.ed-post-title { font-family: 'Fraunces', Georgia, serif; font-size: 1.15rem; margin: 3px 0 4px; }
+.ed-post-title a { color: var(--primary); text-decoration: none; }
+.ed-post-title a:hover { text-decoration: underline; }
+
+/* ---- sidebar ---- */
 .home-side { font-size: 0.85rem; line-height: 1.6; }
-.home-side .widget { margin-bottom: 24px; }
+.home-side .widget {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
 .home-side p { margin: 0 0 8px; }
+.home-side p:last-child { margin-bottom: 0; }
 .widget-title {
   font-family: 'Fraunces', Georgia, serif;
-  color: var(--tertiary);
-  font-size: 1rem; letter-spacing: 1px; text-transform: lowercase;
+  color: var(--accent);
+  font-size: 0.95rem; letter-spacing: 1px; text-transform: lowercase;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 3px; margin: 0 0 8px;
+  padding-bottom: 4px; margin: 0 0 8px;
 }
 .widget-list { list-style: none; padding: 0; margin: 0; }
 .widget-list li { margin: 5px 0; }
@@ -184,25 +319,13 @@ details.toc,
   font-size: 0.76rem; color: var(--secondary); font-style: italic;
 }
 
-/* ---- center column ---- */
-.home-main p { margin: 0 0 12px; }
-.home-rule { border: 0; border-top: 1px solid var(--border); margin: 22px 0; }
-.home-post { margin-bottom: 22px; }
-.home-post-meta { color: var(--secondary); font-size: 0.8rem; margin-bottom: 4px; }
-.home-post-title {
-  font-family: 'Fraunces', Georgia, serif;
-  font-size: 1.2rem; margin: 0 0 4px;
-}
-.home-post-title a { color: var(--primary); text-decoration: none; }
-.home-post-more { color: var(--link); text-decoration: none; font-size: 0.9rem; }
-
 /* ---- mobile / tablet: stack to one column ---- */
 @media (max-width: 900px) {
-  .home-cols { grid-template-columns: 1fr; gap: 4px; }
+  .ed-hero { grid-template-columns: 1fr; gap: 22px; }
+  .ed-shot { max-width: 300px; margin: 0 auto; }
+  .ed-headline { font-size: 2.3rem; }
+  .ed-cols { grid-template-columns: 1fr; gap: 8px; }
   .home-side { font-size: 0.9rem; }
-  .home-main { order: -1; }              /* intro + posts first on small screens */
-  .home-side-left  { order: 1; }
-  .home-side-right { order: 2; }
   .widget-updated { margin-top: 12px; }
 }
 

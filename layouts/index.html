@@ -1,25 +1,78 @@
 {{- define "main" }}
 
 {{/* ============================================================
-     Custom 3-column homepage for anayancy.dev
-     Content for the widgets lives in hugo.toml under [params.widgets]
-     so you can edit text without touching this file.
+     Editorial homepage for anayancy.dev
+
+     Three pieces, and where to edit each one:
+       1. HERO      -> hugo.toml, [params.hero]
+       2. TICKER    -> hugo.toml, params.tickerWords
+       3. BODY      -> content/_index.md
+       4. SIDEBAR   -> hugo.toml, [params.widgets]
      ============================================================ */}}
 
-<div class="home-masthead">
+{{/* ---------- 1. HERO ---------- */}}
+{{- with site.Params.hero }}
+<section class="ed-hero">
+  <div class="ed-hero-text">
+    {{- with .label }}<p class="ed-label">{{ . }}</p>{{ end }}
+    {{- with .headline }}<h1 class="ed-headline">{{ partial "inline-md.html" . }}</h1>{{ end }}
+    {{- range .intro }}<p class="ed-intro">{{ partial "inline-md.html" . }}</p>{{ end }}
+    {{- with .buttons }}
+    <p class="ed-pills">
+      {{- range . }}
+      <a href="{{ .url | relURL }}"{{ if .outline }} class="alt"{{ end }}>{{ .name }}</a>
+      {{- end }}
+    </p>
+    {{- end }}
+  </div>
+
   {{- with site.Params.profileMode.imageUrl }}
-  <img class="home-avatar" src="{{ . | absURL }}" alt="{{ site.Title }}" width="110" height="110">
+  <div class="ed-shot">
+    <span class="ed-blob" aria-hidden="true"></span>
+    <img src="{{ . | absURL }}" alt="{{ site.Title }}" width="340" height="340">
+  </div>
   {{- end }}
-  <h1 class="home-name">{{ site.Title }}</h1>
-  {{- with site.Params.tagline }}
-  <p class="home-tagline"><span class="fl">&#10022;</span>{{ . }}<span class="fl">&#10022;</span></p>
-  {{- end }}
+</section>
+{{- end }}
+
+{{/* ---------- 2. TICKER ---------- */}}
+{{- $words := site.Params.tickerWords }}
+{{- if $words }}
+<div class="ed-marquee" aria-hidden="true">
+  <div class="ed-marquee-run">
+    {{- /* the list is printed twice so the scroll loops seamlessly */ -}}
+    {{- range $pass := (slice 1 2 3 4) }}
+      {{- range $words }}<span>{{ . }}</span><span class="ed-marquee-dot">&#10022;</span>{{ end }}
+    {{- end }}
+  </div>
 </div>
+{{- end }}
 
-<div class="home-cols">
+{{/* ---------- 3 + 4. BODY AND SIDEBAR ---------- */}}
+<div class="ed-cols">
 
-  {{/* ---------- LEFT SIDEBAR ---------- */}}
-  <aside class="home-side home-side-left">
+  <div class="ed-body post-content">
+    {{ .Content }}
+
+    {{/* Recent posts are pulled automatically — nothing to edit here. */}}
+    {{- $posts := where site.RegularPages "Type" "posts" }}
+    {{- if $posts }}
+    <section class="ed-block">
+      <p class="ed-label">writing</p>
+      <h2>Recent <em>posts</em></h2>
+      {{- range first 3 $posts }}
+      <article class="ed-post">
+        <div class="ed-post-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+        <h3 class="ed-post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <div class="ed-post-meta">{{ .Summary | plainify | truncate 140 }}</div>
+      </article>
+      {{- end }}
+      <a class="ed-more" href="{{ "posts/" | absURL }}">all posts &rarr;</a>
+    </section>
+    {{- end }}
+  </div>
+
+  <aside class="home-side">
 
     {{- with site.Params.widgets.currently }}
     <section class="widget">
@@ -59,32 +112,15 @@
     </section>
     {{- end }}
 
-    {{- with site.Params.widgets.lastUpdated }}
-    <p class="widget-updated">last updated {{ . }}</p>
-    {{- end }}
-  </aside>
-
-  {{/* ---------- CENTER ---------- */}}
-  <div class="home-main post-content">
-    {{ .Content }}
-  </div>
-
-  {{/* ---------- RIGHT SIDEBAR ---------- */}}
-  <aside class="home-side home-side-right">
-
-    {{- $posts := where site.RegularPages "Type" "posts" }}
-    {{- if $posts }}
+    {{- with site.Params.widgets.news }}
     <section class="widget">
-      <h2 class="widget-title">recent posts</h2>
+      <h2 class="widget-title">in the news</h2>
       <ul class="widget-list">
-        {{- range first 4 $posts }}
-        <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-          <div class="widget-postdate">{{ .Date.Format "Jan 2, 2006" }}</div>
-        </li>
+        {{- range . }}
+        <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a></li>
         {{- end }}
       </ul>
-      <p class="widget-more"><a href="{{ "posts/" | absURL }}">all posts &rarr;</a></p>
+      <p class="widget-more"><a href="{{ "news/" | absURL }}">all coverage &rarr;</a></p>
     </section>
     {{- end }}
 
@@ -99,23 +135,8 @@
     </section>
     {{- end }}
 
-    {{- with site.Params.widgets.news }}
-    <section class="widget">
-      <h2 class="widget-title">in the news</h2>
-      <ul class="widget-list">
-        {{- range . }}
-        <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a></li>
-        {{- end }}
-      </ul>
-      <p class="widget-more"><a href="{{ "news/" | absURL }}">all coverage &rarr;</a></p>
-    </section>
-    {{- end }}
-
-    {{- with site.Params.widgets.organizing }}
-    <section class="widget">
-      <h2 class="widget-title">organizing</h2>
-      <p>{{ .role }}, {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .org }}</a>{{ else }}{{ .org }}{{ end }}</p>
-    </section>
+    {{- with site.Params.widgets.lastUpdated }}
+    <p class="widget-updated">last updated {{ . }}</p>
     {{- end }}
   </aside>
 

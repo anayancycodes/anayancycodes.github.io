@@ -1,0 +1,16 @@
+{{- /* This replaces PaperMod's built-in footer (switched off via hideFooter in
+       hugo.toml) so the wordmark sits above the credits rather than below. */ -}}
+{{- if not (.Param "hideFooterMark") }}
+<div class="ed-signoff">
+  <a class="ed-signoff-mark" href="{{ "" | absLangURL }}">{{ site.Title }}</a>
+  {{- with site.Params.tagline }}<span class="ed-signoff-tag">{{ . }}</span>{{ end }}
+</div>
+<div class="ed-credits">
+  <span>&copy; {{ now.Year }} {{ site.Title }}</span>
+  {{- print " · " }}
+  <span>Built with
+    <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &amp;
+    <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+  </span>
+</div>
+{{- end }}
