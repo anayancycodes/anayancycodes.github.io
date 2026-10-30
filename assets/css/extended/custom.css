@@ -23,6 +23,7 @@
   --accent: #8C4A5A;           /* italic accent words + section labels (Deep Rose) */
   --soft: #F2DEE2;             /* photo blob, ticker band, callout box (Blush) */
   --card: #FFFDF7;             /* sidebar card background */
+  --swipe: #C0D6DF;            /* highlighter swipe under the wordmark (Pale Sky) */
 }
 
 /* ---------- DARK THEME (this PaperMod uses html[data-theme="dark"]) ---------- */
@@ -41,6 +42,8 @@
   --accent: #E6B9C2;           /* italic accent words + section labels */
   --soft: #6B2238;             /* photo blob, ticker band, callout box */
   --card: #5E1832;             /* sidebar card background */
+  --swipe: #2E6F7E;            /* highlighter swipe under the wordmark (deep teal, so the
+                                  cream descenders stay readable where they cross it) */
 }
 
 /* ---------- FONTS ---------- */
@@ -126,15 +129,23 @@ details.toc,
    WORDMARK — your name, in Playfair Display italic.
    Appears in the site header (every page) and in the footer.
    ============================================================ */
-.logo a {
+.logo a,
+.ed-signoff-mark {
   font-family: 'Playfair Display', Georgia, serif !important;
   font-style: italic;
   font-weight: 600;
-  font-size: 2.3rem;
-  line-height: 1.15;
   letter-spacing: 0.2px;
   color: var(--primary);
+  /* Pale Sky swiped across the baseline, like a highlighter. The percentages
+     are of the line box, so it scales with the font size. */
+  background-image: linear-gradient(
+      transparent 68%,
+      var(--swipe) 68%,
+      var(--swipe) 94%,
+      transparent 94%);
+  background-repeat: no-repeat;
 }
+.logo a { font-size: 2.3rem; line-height: 1.15; }
 @media (max-width: 600px) { .logo a { font-size: 1.7rem; } }
 
 /* PaperMod's own footer is switched off (hideFooter in hugo.toml); this block
@@ -148,11 +159,7 @@ details.toc,
   display: flex; justify-content: space-between; align-items: center;
   flex-wrap: wrap; gap: 10px;
 }
-.ed-signoff-mark {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic; font-weight: 600; font-size: 1.3rem;
-  color: var(--primary); text-decoration: none;
-}
+.ed-signoff-mark { font-size: 1.3rem; line-height: 1.5; text-decoration: none; }
 .ed-signoff-tag {
   font-family: 'Fraunces', Georgia, serif;
   font-size: 0.72rem; letter-spacing: 2.5px; text-transform: uppercase;
