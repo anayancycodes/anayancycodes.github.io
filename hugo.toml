@@ -95,7 +95,7 @@ buildFuture = false
       url   = "https://atlanta.capitalbnews.org/emory-campus-ai-surveillance-protest/"
     [[params.widgets.news]]
       title = "Atlanta Civic Circle — DeFlock Emory"
-      url   = "https://atlantaciviccircle.org/2026/04/13/deflock-emory-coalition-flock-license-cameras-petition/"
+      url   = "/press/atlanta-civic-circle-deflock-emory-2026-04-13.pdf"
     [[params.widgets.news]]
       title = "NYT — American Dreamers"
       url   = "https://www.nytimes.com/interactive/projects/storywall/american-dreamers/stories/anayancy-ramos"
